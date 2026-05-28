@@ -10,6 +10,7 @@
 }
 @layer components {
   body {
+    font-family: var(--font-denim), sans-serif;
     background-color: var(--color-cool-gray);
   }
   ::-webkit-scrollbar {
@@ -20,6 +21,6 @@
 
 @layer utilities {
   .slash-before {
-    @apply before:font-light before:content-["/\00A0"];
+    @apply before:font-light before:content-['/\00A0'];
   }
 }

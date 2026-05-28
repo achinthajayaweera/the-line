@@ -1,5 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
+const DenimVF = localFont({
+  src: "./fonts/DenimVF.woff",
+  variable: "--font-denim",
+});
 
 export const metadata: Metadata = {
   title: "The Line Studio",
@@ -13,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body
+        className={`${DenimVF.variable} overflow-x-clip antialiased [text-rendering:optimizeLegibility] selection:bg-flare-red selection:text-off-white`}
+      >
         {children}
       </body>
     </html>
