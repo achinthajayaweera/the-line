@@ -1,7 +1,21 @@
+import ClientsPlusPartners from "@/sections/ClientsPlusPartners";
+import News from "@/sections/News";
+import Footer from "@/sections/Footer";
+import TheStudio from "@/sections/TheStudio";
+import Contact from "@/sections/Contact";
+import Group from "@/sections/Group";
+
 export default function Page() {
   return (
     <main>
-      <h1>The Line Studio — Coming Soon</h1>
+      <Group />
+      <TheStudio />
+      <ClientsPlusPartners />
+      <div className="relative overflow-clip bg-flare-red">
+        <News />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   );
 }
