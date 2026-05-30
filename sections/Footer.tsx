@@ -37,12 +37,16 @@ export default function Footer() {
           ))}
         </List>
       </div>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 left-[20.51282vw] z-10 w-[138.46154vw] opacity-[0.2] mix-blend-multiply grayscale-[0.3] lg:left-[29%] lg:w-[26.04167vw] lg:opacity-100"
-      >
-        <Image className="h-auto w-full" src={FooterBackground} alt="" />
+      <div className="col-span-9 pt-4 pb-1 text-center text-[11px] leading-[1.4] font-[440] tracking-[-0.01em] text-off-white/60 uppercase lg:text-[0.64vw]">
+        Demo developed by{" "}
+        <Link
+          href="https://wa.me/94761490417"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-off-white underline underline-offset-2 hover:text-flare-red transition-colors duration-300"
+        >
+          Achintha Jayaweera
+        </Link>
       </div>
-    </div>
   );
 }
