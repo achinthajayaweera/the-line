@@ -4,22 +4,24 @@ import Hero from "@/sections/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import HighlightCard from "@/components/HighlightCard";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function SectionOfSectionsClient() {
   const backgroundColor = useMotionValue("transparent");
   const projects = [
     {
-      videoSrc: "/assets/videos/projects/the-hex.mp4",
+      videoSrc: `${BASE}/assets/videos/projects/the-hex.mp4`,
       title: "The Hex - Warframe: 1999",
       linkToProject:
         "https://thelinestudio.com/work/the-hex-warframe-1999-animated-prologue",
     },
     {
-      videoSrc: "/assets/videos/projects/azuki-elementals.mp4",
+      videoSrc: `${BASE}/assets/videos/projects/azuki-elementals.mp4`,
       title: "Azuki Elementals",
       linkToProject: "https://thelinestudio.com/work/azuki",
     },
     {
-      videoSrc: "/assets/videos/projects/marvel-snap.mp4",
+      videoSrc: `${BASE}/assets/videos/projects/marvel-snap.mp4`,
       title: "Marvel Snap / Hero",
       linkToProject: "https://thelinestudio.com/work/hero-marvel-snap",
     },
