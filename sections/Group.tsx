@@ -7,7 +7,7 @@ export default function Group() {
     <div className="relative max-w-screen overflow-x-clip lg:mb-[25vh]">
       <div className="sticky top-0 z-10 pb-[100vh]">
         <div className="h-screen">
-          <Video src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/videos/hero.mp4`} />
+          <Video src="/the-line/assets/videos/hero.mp4" />
         </div>
       </div>
       <GroupClient />

@@ -11,7 +11,7 @@ export default function ClientsPlusPartnersClient() {
       whileTap="scaleDown"
       className="absolute inset-0 flex flex-col items-center justify-center"
     >
-      <Video src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/videos/hero.mp4`} />
+      <Video src="/the-line/assets/videos/hero.mp4" />
       <IntersectionObserverPlane
         setThemeTo="light"
         setThemeFrom="dark"
