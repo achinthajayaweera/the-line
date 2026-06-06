@@ -1,8 +1,6 @@
 import { readFileSync, writeFileSync, readdirSync, statSync } from "fs";
 import { join } from "path";
 
-const OUT_DIR = "./out";
-
 function fixFile(filePath) {
   let content = readFileSync(filePath, "utf8");
   const original = content;
@@ -21,5 +19,10 @@ function walkDir(dir) {
   }
 }
 
-walkDir(OUT_DIR);
+// Fix out/ folder
+walkDir("./out");
+
+// Also fix root HTML files
+fixFile("./index.html");
+
 console.log("Done fixing video paths.");
