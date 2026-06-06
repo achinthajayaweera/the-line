@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import Video from "@/components/Server/Video";
 import GroupClient from "./GroupClient";
 
